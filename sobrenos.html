@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icone.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>StockManager - Anhanguera</title>
+</head>
+<body>
+    <div id="stock-login">
+        <img src="images/marcadagua.png" alt="" class="marcadagua">
+        <div class="login-stock-container">
+            <img src="images/sticker.png" alt="" class="sticker">
+            <div class="login-form">
+                <h1>Seja Bem-vindo(a),ao <br> <span id="laranja">Stock Manager</span></h1>
+                <span>Faça seu login preenchando os campos para entrar na <br> nossa plataforma.</span>
+                <br>
+                <label for="">E-mail</label>
+                <input type="text" id="email" placeholder="Digite seu E-mail">
+                <br>
+                <label for="">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua *****">
+                <br>
+                <button id="login-button" type="submit">Fazer Login</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="stock-onlogin" style="display: none;">
+        <div class="stock-header">
+            <div class="header-left">
+                <img width="200px" id="clickLogotype" src="images/logotype.svg" alt="">
+                <a href="index.html" style="color: white;">Inicio</a>
+                <a href="retirada.php">Retirada</a>
+                <a href="cadastro.php">Cadastro</a>
+                <a href="monitoramento.php">Monitoramento</a>
+            </div>
+            <div class="header-right">
+                <a href=""><img src="images/notificação.svg" alt=""></a>
+                <a id="logout"><img id="logout" src="images/logoff.svg" alt=""></a>
+                <span id="username">Usuário</span>
+                <img src="images/logo.png" alt="" id="myImage2">
+            </div>
+        </div>
+        <div class="stock-flex">
+            <div class="stock-container">
+                <h1 id="stock-title2">Equipe de desenvolvimento</h1>
+                <div class="stock-inline2">
+                    
+                    <div class="group-profile">
+                        <div class="profile-top">
+                            <img src="images/Luis2.png" alt="">
+                            <div class="top-line"></div>
+                        </div>
+                        <div class="profile-bottom">
+                            <h1>Luis Eduardo Andrade</h1>
+                            <span>Programador Full Stack</span>
+                            <div class="linguagens">
+                                <span>Liguagens:</span>
+                                <div class="display-linguagens">
+                                    <img title="HTML" src="images/iconHtml.svg" alt="">
+                                    <img title="CSS" src="images/iconCss.svg" alt="">
+                                    <img title="JavaScript" src="images/iconJavascript.svg" alt="">
+                                    <img title=".Lua" src="images/iconLua.svg" alt="">
+                                    <img title="PhP" src="images/iconPhp.svg" alt="">
+                                    <img title="Python" src="images/iconPython.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="email-display">
+                                <span>E-mail:</span>
+                                <a href="mailto:luis.e.silva@kroton.com.br">luis.e.silva@kroton.com.br</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group-profile">
+                        <div class="profile-top">
+                            <img src="images/Matheus2.png" alt="">
+                            <div class="top-line"></div>
+                        </div>
+                        <div class="profile-bottom">
+                            <h1>Matheus Pereira</h1>
+                            <span>Programador Front-End Jr.</span>
+                            <div class="linguagens">
+                                <span>Liguagens:</span>
+                                <div class="display-linguagens">
+                                    <img title="HTML" src="images/iconHtml.svg" alt="">
+                                    <img title="CSS" src="images/iconCss.svg" alt="">
+                                    <img title="JavaScript" src="images/iconJavascript.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="email-display">
+                                <span>E-mail:</span>
+                                <a href="mailto:mp.santos@kroton.com.br">mp.santos@kroton.com.br</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-stock">
+                <img src="images/footerLogoo.png" width="100px" alt="">
+                <span>
+                    Equipe de desenvolvimento por : Luis Eduardo Andrade & Matheus Pereira
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="javascript.js"></script>
+</html>
+<style>
+.display-linguagens img {
+    position: relative;
+    display: inline-block;
+}
+
+.display-linguagens img :hover::before {
+    content: attr(title);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    bottom: 100%;
+    z-index: 1;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.display-linguagens img :hover::before {
+    opacity: 1;
+}
+</style>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="images/icone.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>StockManager - Anhanguera</title>
+</head>
+<body>
+    <div id="suportButton" class="suport-link">
+        <div class="mensagem-suport" style="display: none;">
+            <span>Está com duvidas, chame os administradores</span>
+        </div>
+        <a  title="Equipe de Desenvolvimento/Suporte" href="sobrenos.html"><img src="images/suport.svg" alt=""></a>
+    </div>
+
+    <div id="stock-login">
+        <img src="images/marcadagua.png" alt="" class="marcadagua">
+        <div class="login-stock-container">
+            <img src="images/sticker.png" alt="" class="sticker">
+            <div class="login-form">
+                <h1>Seja Bem-vindo(a),ao <br> <span id="laranja">Stock Manager</span></h1>
+                <span>Faça seu login preenchando os campos para entrar na <br> nossa plataforma.</span>
+                <br>
+                <label for="">E-mail</label>
+                <input type="text" id="email" placeholder="Digite seu E-mail">
+                <br>
+                <label for="">Senha</label>
+                <div class="inputSenha">
+                    <input type="password" id="senha" placeholder="Digite sua *****">
+                    <span id="mostrarSenha" class="material-symbols-outlined">visibility_off</span>
+                </div>
+                <br>
+                <button id="login-button" type="submit">Fazer Login</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="stock-onlogin" style="display: none;">
+        <div class="stock-header">
+            <div class="header-left">
+                <img width="200px" id="clickLogotype" src="images/logotype.svg" alt="">
+                <a href="index.html" style="color: white;">Inicio</a>
+                <a href="retirada.php">Retirada</a>
+                <a href="cadastro.php">Cadastro</a>
+                <a href="monitoramento.php">Monitoramento</a>
+            </div>
+            <div class="header-right">
+                <a href=""><img src="images/notificação.svg" alt=""></a>
+                <a id="logout"><img id="logout" src="images/logoff.svg" alt=""></a>
+                <span id="username">Usuário</span>
+                <img src="images/logo.png" alt="" id="myImage2">
+            </div>
+        </div>
+        <div class="stock-flex">
+            <div class="stock-container">
+                <h1 id="stock-title">Links & Ferramentas</h1>
+                <div class="stock-inline">
+                    <a href="almoxarifado1.php"><img src="images/limpeza.svg" alt=""></a>
+                    <a href="almoxarifado2.php"><img src="images/papelaria.svg" alt=""></a>
+                    <a href="almoxarifado3.php"><img src="images/consumo.svg" alt=""></a>
+                    <a href="almoxarifado4.php"><img src="images/epi.svg" alt=""></a>
+                    <a href="almoxarifado5.php"><img src="images/reagent.svg" alt=""></a>
+                    <a href="almoxarifado6.php"><img src="images/produto.svg" alt=""></a>
+                    <a href="almoxarifado7.php"><img src="images/almoxarifado.svg" alt=""></a>
+                    <a href="almoxarifado8.php"><img src="images/equipamentos.svg" alt=""></a>
+                    <a href="almoxarifado9.php"><img src="images/esportivos.svg" alt=""></a>
+                    <a href="almoxarifado10.php"><img src="images/geral.svg" alt=""></a>
+                    <a href="almoxarifado11.php"><img src="images/clinicane.svg" alt=""></a>
+                    <a href="almoxarifado12.php"><img src="images/clinicafp.svg" alt=""></a>
+                    <a href="almoxarifado13.php"><img src="images/odonto.svg" alt=""></a>
+                    <a href="almoxarifadoti.php"><img src="images/ti1.svg" alt=""></a>
+                    <a href="almoxarifadoti2.php"><img src="images/ti2.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-stock">
+                <img src="images/footerLogoo.png" width="100px" alt="">
+                <span>
+                    Equipe de desenvolvimento por : Luis Eduardo Andrade & Matheus Pereira
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="javascript.js"></script>
+</html>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+    const senhaInput = document.getElementById('senha');
+    const mostrarSenhaIcon = document.getElementById('mostrarSenha');
+    
+    mostrarSenhaIcon.addEventListener('click', function () {
+        if (senhaInput.type === 'password') {
+            senhaInput.type = 'text';
+            mostrarSenhaIcon.innerHTML = "visibility"
+            mostrarSenhaIcon.classList.remove('fa-eye');
+            mostrarSenhaIcon.classList.add('fa-eye-slash');
+        } else {
+            senhaInput.type = 'password';
+            mostrarSenhaIcon.innerHTML = "visibility_off";
+            mostrarSenhaIcon.classList.remove('fa-eye-slash');
+            mostrarSenhaIcon.classList.add('fa-eye');
+        }
+    });
+});
+</script>
+

@@ -1,0 +1,122 @@
+:root{
+    --cor-principal: #B95737;
+}
+
+.stock-notify{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+    background-color: #1e1e1e32;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+strong {
+    font-weight: 600;
+}
+.notification {
+    width: 360px;
+    padding: 15px;
+    background-color: #1E1E1E;
+    border: 1px solid #575757a1;
+    border-radius: 16px;
+    position: fixed;
+    bottom: 2vh;
+    left: 2vh;
+    animation: 1.2s noti ease-in;
+}
+.notification-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.notification-title {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.notification-close {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5;
+    font-size: 14px;
+}
+.notification-container {
+    display: flex;
+    align-items: flex-start;
+}
+.notification-media {
+    position: relative;
+}
+.notification-user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    object-fit: cover;
+}
+.notification-reaction {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    background-image: linear-gradient(45deg, var(--cor-principal), var(--cor-principal));
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.notification-content {
+    width: calc(100% - 60px);
+    padding-left: 20px;
+    line-height: 1.2;
+}
+.notification-text {
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: white;
+    text-overflow: ellipsis;
+    padding-right: 50px;
+}
+.notification-timer {
+    color: var(--cor-principal);;
+    font-weight: 600;
+    font-size: 14px;
+}
+.notification-status {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+   /* transform: translateY(-50%);
+    */
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor-principal);;
+    border-radius: 50%;
+}
+@keyframes noti {
+    0% {
+        transform: translate(-200%,0%);
+   }
+    100% {
+        transform: translate(0%, 0%);
+   }
+}

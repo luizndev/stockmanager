@@ -1,0 +1,6 @@
+echo "var html = `<div id='notifications'>
+                    <div id='sucesso'><span class='material-symbols-outlined'>done_all</span>Item Cadastrado com Sucesso!</div>
+                    <div id='negado'><span class='material-symbols-outlined'>close</span>Quantidade desse item indisponivel!</div>
+                    <div id='aviso'><span class='material-symbols-outlined'>warning</span>Item retirado com sucesso!</div>
+                    <div id='importante'><span class='material-symbols-outlined'>info</span>Preencha os campos para realizar Cadastro/Retirada</div>
+                </div>`;$(html).fadeIn(2000).appendTo('#notifications').delay(event.data.time).fadeOut(2000);"

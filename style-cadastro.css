@@ -1,0 +1,174 @@
+:root{
+    --cor-principal: #B95737;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1E1E1E;
+}
+
+
+#cadastro-show-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cadastro-show-container h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.51356rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#cadastro-show-container h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.18475rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;   
+}
+
+.cadastro-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+}
+
+.cadastro-form label{
+    color: #FFF;
+    font-family: Sora;
+    font-size: 1.025rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.cadastro-form input{
+    width: 37.438rem;
+    height: 3.55rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    background: #111;
+    color: white;
+    padding-left: 15px;
+}
+
+.cadastro-form select{
+    width: calc(37.438rem + 0.938rem);
+    height: 3.55rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    background: #111;
+    color: white;
+    padding-left: 15px;
+}
+
+
+.cadastro-form button:hover{
+    transition: .4s ease-in-out;
+    transform: scale(0.99);
+    filter: saturate(50%);
+}
+
+.cadastro-form button{
+    width: 17.125rem;
+    transition: .4s ease-in-out;
+
+    height: 5.25rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+
+    display: flex;
+    width: 17.925rem;
+    height: 3.55rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.025rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#salvar{
+    background: #61B937;
+}
+
+#limpar{
+    background: #B93737;
+}
+
+.footer-stock{
+    margin-top: 45px !important;
+    position: relative !important;
+}
+
+.groupButton{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+
+.progress-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+  
+  .progress {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    position: relative;
+  }
+  
+  .progress-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip: rect(0, 50%, 100%, 0);
+    background-color: #3498db;
+  }
+
+  
+  
+.material-symbols-outlined{
+    cursor: pointer;
+    opacity: 1 !important;
+}
